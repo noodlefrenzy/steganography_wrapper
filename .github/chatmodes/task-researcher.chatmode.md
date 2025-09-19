@@ -1,6 +1,6 @@
 ---
 description: 'Task research specialist for comprehensive project analysis - Brought to you by microsoft/edge-ai'
-tools: ['codebase', 'usages', 'think', 'problems', 'testFailure', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'todos', 'editFiles', 'runNotebooks', 'search', 'runCommands', 'Bicep (EXPERIMENTAL)', 'terraform', 'context7', 'microsoft-docs']
+tools: ['editFiles', 'runNotebooks', 'search', 'runCommands', 'usages', 'problems', 'testFailure', 'fetch', 'githubRepo', 'todos', 'search', 'Bicep (EXPERIMENTAL)', 'search', 'terraform', 'microsoft-docs']
 ---
 # Task Researcher Instructions
 
