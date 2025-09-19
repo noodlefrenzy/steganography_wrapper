@@ -1,0 +1,88 @@
+# Python standard ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.env/
+.envrc
+
+# Distribution / packaging
+build/
+dist/
+wheelhouse/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+.installed.cfg
+
+# PyInstaller
+*.spec
+
+# Logs & diagnostics
+*.log
+logs/
+coverage.xml
+pytest.cache/
+.pytest_cache/
+.coverage*
+htmlcov/
+.cache/
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+ruff_cache/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb_convert/
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Test artifacts
+.tox/
+.nox/
+.pytest_cache/
+
+# Coverage & profiling
+.prof
+.profraw
+*.lcov
+
+# Generated assets (images produced during tests/examples)
+generated_images/
+
+# Local environment secrets (avoid committing real keys)
+secrets.local.json
+.env.local
+
+# Cache for stego experiments
+stego_cache/
+
+# Ignore potential large binary carriers (adjust if needed)
+carriers_raw/
+
+# Lock files (add if project uses poetry/pipenv later)
+# poetry.lock
+# Pipfile.lock
+
