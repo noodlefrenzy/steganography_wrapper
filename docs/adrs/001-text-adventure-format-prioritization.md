@@ -161,12 +161,13 @@ These formats either don't align with classic text adventure goals or lack the t
 
 ## Implementation Roadmap
 
-### Phase 1: ZIL (MVP) - Weeks 1-15
+### Phase 1: ZIL (MVP) - Months 1-4 (Weeks 1-15)
 - Integrate ZILF compiler (WASM or backend)
 - Implement Z-machine interpreter (Parchment)
 - Build AI generation prompts for ZIL syntax
 - Develop agent validation for Z-code
 - **Success Metric:** 90%+ compile success rate, 100+ generated adventures
+  - High target due to ZIL's mature tooling and well-understood syntax
 
 ### Phase 2: Inform 7 - Months 4-6 (Post-MVP)
 - Research Inform 7 compiler integration options
@@ -174,12 +175,14 @@ These formats either don't align with classic text adventure goals or lack the t
 - Develop Inform 7 AI generation prompts (leverage natural language syntax)
 - Extend agent to handle Glulx format
 - **Success Metric:** 85%+ compile success rate, 50+ Inform adventures generated
+  - Slightly lower target reflects Inform 7's more complex compiler and richer feature set
 
 ### Phase 3: TADS 3 - Months 7-9 (Future)
 - Backend compilation service for TADS 3
 - Integrate FrobTads JS runtime
 - Develop TADS 3 generation prompts
 - **Success Metric:** 75%+ compile success rate, 25+ TADS adventures
+  - Lower target accounts for C-like syntax complexity and less AI-friendly structure
 
 ### Phase 4: Ink/ChoiceScript - Months 10+ (Exploratory)
 - Evaluate community demand for choice-based formats
