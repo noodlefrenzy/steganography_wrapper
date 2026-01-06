@@ -8,15 +8,15 @@ Version 1.0 | Status Draft | Owner TBD | Team TBD | Target Q1 2026 | Lifecycle N
 
 | Phase | Done | Gaps | Updated |
 |-------|------|------|---------|
-| Context | ✅ Complete | None | 2026-01-06 |
-| Problem & Users | ✅ Complete | None | 2026-01-06 |
-| Scope | ✅ Complete | None | 2026-01-06 |
-| Requirements | ✅ Complete | None | 2026-01-06 |
-| Metrics & Risks | ✅ Complete | None | 2026-01-06 |
-| Operationalization | ✅ Complete | None | 2026-01-06 |
-| Finalization | ✅ Complete | None | 2026-01-06 |
+| Context | ✅ Initial Draft | Needs stakeholder validation | 2026-01-06 |
+| Problem & Users | ✅ Initial Draft | User research to validate personas | 2026-01-06 |
+| Scope | ✅ Initial Draft | Technical feasibility assessment needed | 2026-01-06 |
+| Requirements | ✅ Initial Draft | Prioritization to be refined with team | 2026-01-06 |
+| Metrics & Risks | ✅ Initial Draft | Baseline metrics need validation | 2026-01-06 |
+| Operationalization | ✅ Initial Draft | Infrastructure decisions pending | 2026-01-06 |
+| Finalization | ⏳ In Progress | Awaiting technical validation and stakeholder review | 2026-01-06 |
 
-Unresolved Critical Questions: 0 | TBDs: 0
+Unresolved Critical Questions: 6 | TBDs: 0
 
 ## 1. Executive Summary
 
@@ -482,7 +482,7 @@ Categories: Performance, Reliability, Scalability, Security, Privacy, Accessibil
 
 | Q ID | Question | Owner | Deadline | Status |
 |------|----------|-------|---------|--------|
-| Q-001 | Which generative AI model performs best for ZIL generation (Claude vs GPT-4 vs others)? | Engineering | Week 2 | ✅ Resolved - Claude Sonnet recommended |
+| Q-001 | Which generative AI model performs best for ZIL generation (Claude vs GPT-4 vs others)? | Engineering | Week 2 | Open - Claude Sonnet assumed for planning but needs validation |
 | Q-002 | Can ZILF compiler run in WASM, or must we use backend service? | Engineering | Week 2 | Open |
 | Q-003 | What's the optimal prompt structure for adventure generation (single mega-prompt vs multi-turn)? | Engineering | Week 4 | Open |
 | Q-004 | Should we support multiplayer/collaborative adventure creation? | Product | Week 8 | Open |
