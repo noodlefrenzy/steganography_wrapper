@@ -16,7 +16,7 @@ Version 1.0 | Status Draft | Owner TBD | Team TBD | Target Q1 2026 | Lifecycle N
 | Operationalization | ✅ Initial Draft | Infrastructure decisions pending | 2026-01-06 |
 | Finalization | ⏳ In Progress | Awaiting technical validation and stakeholder review | 2026-01-06 |
 
-Unresolved Critical Questions: 7 | TBDs: 0
+Unresolved Critical Questions: 8 | TBDs: 0
 
 ## 1. Executive Summary
 
@@ -138,7 +138,7 @@ The barrier to entry for creating and playing ZIL text adventures is too high, l
 - **ZIL compiler from scratch:** Leverage existing open-source compilers (e.g., ZILF)
 - **Graphical adventures:** Text-only for initial scope
 - **Audio/Sound effects:** Text-only experience
-- **Non-ZIL formats:** Focus on ZIL exclusively; no support for Inform, TADS, etc.
+- **Additional IF formats in V1:** Initial release focuses on ZIL; support for other formats (Inform, TADS, etc.) to be prioritized via ADR based on ease of integration and feature richness
 
 ### Assumptions
 
@@ -147,11 +147,11 @@ The barrier to entry for creating and playing ZIL text adventures is too high, l
 - Open-source Z-machine interpreters (e.g., Parchment, ZVM) can be integrated into web platform
 - Sufficient prompt engineering can guide AI to create playable, logical adventures
 - AI player agents can parse game state and make reasonable action decisions
-- Browser storage (localStorage/IndexedDB) is adequate for save game persistence
+- Backend services and cloud storage can be used for persistence and scalability while maintaining web-based frontend
 
 ### Constraints
 
-- Must run entirely in browser (client-side) or with minimal backend (for AI API calls only)
+- Frontend must be web-based for universal access; backend services and cloud storage are acceptable and encouraged for scalability
 - Must respect rate limits and costs of generative AI API usage
 - Generated adventures must be compatible with standard Z-machine format (Z3, Z5, or Z8)
 - Player agent must operate within reasonable time bounds (not hours to solve simple puzzles)
@@ -489,6 +489,7 @@ Categories: Performance, Reliability, Scalability, Security, Privacy, Accessibil
 | Q-005 | What's the best monetization model if we move beyond free tier (subscriptions, pay-per-generation, ads)? | Product | Post-Launch | Open |
 | Q-006 | How do we handle adventures that reference copyrighted IP (e.g., "Star Wars adventure")? | Legal | Week 10 | Open |
 | Q-007 | Should player agent provide hints to human players, or validation only? | Product | Week 6 | Open |
+| Q-008 | Which IF formats should be supported beyond ZIL (Inform, TADS, etc.) and in what priority? Requires ADR. | Architecture | Week 3 | Open - ADR to be created prioritizing based on ease of integration and feature richness |
 
 ## 15. Changelog
 
