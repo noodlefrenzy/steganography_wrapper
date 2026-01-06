@@ -138,7 +138,7 @@ The barrier to entry for creating and playing ZIL text adventures is too high, l
 - **ZIL compiler from scratch:** Leverage existing open-source compilers (e.g., ZILF)
 - **Graphical adventures:** Text-only for initial scope
 - **Audio/Sound effects:** Text-only experience
-- **Non-ZIL formats:** Focus on ZIL exclusively; no support for Inform, TADS, etc.
+- **Non-ZIL formats:** Initial focus on ZIL; see ADR-001 for format prioritization analysis
 
 ### Assumptions
 
@@ -147,11 +147,11 @@ The barrier to entry for creating and playing ZIL text adventures is too high, l
 - Open-source Z-machine interpreters (e.g., Parchment, ZVM) can be integrated into web platform
 - Sufficient prompt engineering can guide AI to create playable, logical adventures
 - AI player agents can parse game state and make reasonable action decisions
-- Browser storage (localStorage/IndexedDB) is adequate for save game persistence
+- Browser storage (localStorage/IndexedDB) is adequate for local save game persistence; backend storage is available for cloud-based features
 
 ### Constraints
 
-- Must run entirely in browser (client-side) or with minimal backend (for AI API calls only)
+- Frontend must be web-based; backend services are allowed for AI API calls, compilation, and cloud storage
 - Must respect rate limits and costs of generative AI API usage
 - Generated adventures must be compatible with standard Z-machine format (Z3, Z5, or Z8)
 - Player agent must operate within reasonable time bounds (not hours to solve simple puzzles)
@@ -495,6 +495,7 @@ Categories: Performance, Reliability, Scalability, Security, Privacy, Accessibil
 | Version | Date | Author | Summary | Type |
 |---------|------|--------|---------|------|
 | 1.0 | 2026-01-06 | AI Assistant | Initial PRD creation with full scope definition | Creation |
+| 1.1 | 2026-01-06 | AI Assistant | Clarified backend/frontend architecture; added ADR-001 for format prioritization | Revision |
 
 ## 16. References & Provenance
 
@@ -505,6 +506,7 @@ Categories: Performance, Reliability, Scalability, Security, Privacy, Accessibil
 | REF-003 | Technical | Parchment (https://github.com/curiousdannii/parchment) | JavaScript Z-machine interpreter | Primary interpreter option |
 | REF-004 | Community | Interactive Fiction Community Forum (intfiction.org) | Community needs and pain points | User research source |
 | REF-005 | Technical | Z-Machine Standards Document 1.1 | Z-machine specification | Format compliance reference |
+| REF-006 | Decision | ADR-001: Text Adventure Format Prioritization | Analysis and prioritization of text adventure format support | Format roadmap and integration strategy |
 
 ### Citation Usage
 
@@ -512,6 +514,7 @@ Categories: Performance, Reliability, Scalability, Security, Privacy, Accessibil
 - Compilation approach based on [REF-002] capabilities
 - Z-machine runtime requirements from [REF-003, REF-005]
 - User personas informed by [REF-004] community discussions
+- Text adventure format prioritization from [REF-006]
 
 ## 17. Appendices (Optional)
 
